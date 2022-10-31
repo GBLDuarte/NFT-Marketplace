@@ -1,0 +1,15 @@
+.partners {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15rem;
+
+    .logos {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5rem;
+        row-gap: 2rem;
+    }
+}

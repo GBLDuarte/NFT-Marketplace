@@ -3,5 +3,21 @@ body {
     color: white;
 }
 
+// Boton reutilizable en las diferentes secciones 
+.btnMas {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    width: 220px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+// Imports
 @import "./componentes/header";
 @import "./componentes/mainContent";
+@import "./componentes/partners";
+@import "./componentes/trendings";
+@import "./componentes/collections";
+@import "./componentes/categories";
+@import "./componentes/instructions";
