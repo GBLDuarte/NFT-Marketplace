@@ -1,22 +1,13 @@
 .instructions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %columnBox;
     margin: 12rem;
     padding: 1.5rem;
-    background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-    border: 1.6px solid #ffffff2f;
     border-radius: 40px;
-    backdrop-filter: blur(5px);
+    @extend %effectTransparent;
 
     .titleIns {
         margin-bottom: 2.5rem;
-        font-size: 55px;
-        font-family: 'Clash Display', sans-serif;
-        font-weight: 600;
-        background-image: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @extend %titleGradient;
     }
 
     .flexIns {
@@ -24,9 +15,7 @@
         gap: 1rem;
 
         .boxIns {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @extend %columnBox;
             text-align: center;
 
             .titleBox {
@@ -36,9 +25,7 @@
             }
 
             p {
-                font-family: 'Poppins', sans-serif;
-                font-size: 18px;
-                font-weight: 400;
+                @extend %fontP;
                 max-width: 90%;
             }
         }

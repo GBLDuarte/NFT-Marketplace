@@ -2,7 +2,7 @@
 @import url("http://fonts.cdnfonts.com/css/clash-display");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
-  background-color: #27185B;
+  background: linear-gradient(180deg, rgb(39, 24, 91) 5%, rgb(38, 35, 125) 48%, rgb(0, 1, 66) 95%);
   color: white;
 }
 
@@ -13,6 +13,41 @@ body {
   width: 220px;
   height: 60px;
   border-radius: 60px;
+}
+
+.mainContent .mainNft .effect5, .mainContent .mainNft .effect4, .mainContent .mainNft .effect3, .mainContent .mainNft .effect2, .mainContent .mainNft .effect {
+  position: absolute;
+  transform: matrix(0.98, 0, -0.19, 1, 0, 0);
+  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0.103) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
+  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
+  border-radius: 25px;
+}
+
+.articles .flexArt .boxArt, .instructions, .categories .flexCat .boxCat, .collections .cardsCol .card, .trendings .cardsList .card {
+  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
+  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
+  backdrop-filter: blur(5px);
+}
+
+.articles .titleArt, .instructions .titleIns, .categories .titleCat, .collections .titleCol, .trendings .titleCards, .mainContent .infoMain .titleInfo .gradient {
+  font-size: 55px;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
+  background-image: linear-gradient(100deg, #69EACB, #EACCF8, #6654F1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .subscribe, .articles, .instructions .flexIns .boxIns, .instructions, .categories .flexCat .boxCat, .categories, .collections, .trendings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instructions .flexIns .boxIns p, .categories .flexCat p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .navbar .container-fluid {
@@ -49,21 +84,17 @@ body {
 }
 .mainContent .infoMain .titleInfo {
   margin: 0 4rem 2rem 0;
+  font-family: "Clash Display", sans-serif;
 }
 .mainContent .infoMain .titleInfo p {
-  font-family: "Clash Display", sans-serif;
   font-size: 87px;
   font-weight: 500;
   line-height: 78.5px;
 }
 .mainContent .infoMain .titleInfo .gradient {
-  font-family: "Clash Display", sans-serif;
   font-size: 87px;
   font-weight: 600;
   line-height: 78.5px;
-  background-image: linear-gradient(100deg, #69EACB, #EACCF8, #6654F1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .mainContent .infoMain .subInfo {
   font-family: "Poppins", sans-serif;
@@ -99,64 +130,39 @@ body {
   font-weight: 500;
 }
 .mainContent .mainNft .effect {
-  position: absolute;
   margin-left: 9rem;
   top: 280px;
-  transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0.103) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
   width: 474px;
   height: 600px;
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  border-radius: 25px;
   z-index: -1;
 }
 .mainContent .mainNft .effect2 {
-  position: absolute;
   margin-left: 3rem;
   top: 180px;
   width: 474px;
   height: 336px;
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  border-radius: 25px;
-  transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
   z-index: -1;
 }
 .mainContent .mainNft .effect3 {
-  position: absolute;
   top: 700px;
   left: 1000px;
   width: 344px;
   height: 106px;
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  border-radius: 25px;
-  transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 .mainContent .mainNft .effect4 {
-  position: absolute;
   top: 190px;
   left: 1520px;
   width: 200px;
   height: 74px;
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  border-radius: 25px;
-  transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 .mainContent .mainNft .effect5 {
-  position: absolute;
   top: 825px;
   left: 1290px;
   width: 347px;
   height: 100px;
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  border-radius: 25px;
-  transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .partners {
@@ -175,19 +181,10 @@ body {
 }
 
 .trendings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 12rem;
 }
 .trendings .titleCards {
   margin-bottom: 2.5rem;
-  font-size: 55px;
-  font-family: "Clash Display", sans-serif;
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .trendings .cardsList {
   display: flex;
@@ -196,9 +193,6 @@ body {
   margin-bottom: 5rem;
 }
 .trendings .cardsList .card {
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  backdrop-filter: blur(5px);
   align-items: center;
   width: 440px;
   height: 600px;
@@ -209,19 +203,10 @@ body {
 }
 
 .collections {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 12rem;
 }
 .collections .titleCol {
   margin-bottom: 2.5rem;
-  font-size: 55px;
-  font-family: "Clash Display", sans-serif;
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .collections .btnsCol {
   margin-bottom: 3rem;
@@ -241,9 +226,6 @@ body {
   margin: 0 5rem 5rem 5rem;
 }
 .collections .cardsCol .card {
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  backdrop-filter: blur(5px);
   align-items: center;
   width: 324px;
   height: 472px;
@@ -254,19 +236,10 @@ body {
 }
 
 .categories {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 15rem;
 }
 .categories .titleCat {
   margin-bottom: 2.5rem;
-  font-size: 55px;
-  font-family: "Clash Display", sans-serif;
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .categories .flexCat {
   display: flex;
@@ -274,13 +247,7 @@ body {
   margin-bottom: 3rem;
 }
 .categories .flexCat .boxCat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 1rem 1rem 0 1rem;
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
-  backdrop-filter: blur(5px);
   border-radius: 1rem;
 }
 .categories .flexCat .boxCat .boxImg {
@@ -293,40 +260,19 @@ body {
   flex-direction: column;
   row-gap: 0.5rem;
 }
-.categories .flexCat p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-}
-
 .instructions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 12rem;
   padding: 1.5rem;
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
   border-radius: 40px;
-  backdrop-filter: blur(5px);
 }
 .instructions .titleIns {
   margin-bottom: 2.5rem;
-  font-size: 55px;
-  font-family: "Clash Display", sans-serif;
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .instructions .flexIns {
   display: flex;
   gap: 1rem;
 }
 .instructions .flexIns .boxIns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 .instructions .flexIns .boxIns .titleBox {
@@ -335,49 +281,108 @@ body {
   font-weight: 600;
 }
 .instructions .flexIns .boxIns p {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
   max-width: 90%;
 }
 
 .articles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 15rem;
 }
 .articles .titleArt {
   margin-bottom: 2.5rem;
-  font-size: 55px;
-  font-family: "Clash Display", sans-serif;
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .articles .flexArt {
   display: flex;
   gap: 1rem;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 3rem;
 }
 .articles .flexArt .boxArt {
-  background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
-  border: 1.6px solid rgba(255, 255, 255, 0.1843137255);
   border-radius: 20px;
-  backdrop-filter: blur(5px);
 }
 .articles .flexArt .boxArt .subTitle {
   font-size: 22px;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   max-width: fit-content;
   margin: 1rem;
   opacity: 1;
 }
 .articles .flexArt .boxArt p {
-  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 500;
   opacity: 0.7;
+}
+
+footer {
+  background-color: #010035;
+  padding-top: 6rem;
+}
+footer .subscribe {
+  margin-bottom: 6rem;
+}
+footer .subscribe .titleSubs {
+  font-family: "Clash Display", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+footer .subscribe p {
+  margin-bottom: 1.5rem;
+}
+footer .subscribe .input-group {
+  width: 50%;
+}
+footer .footerInfo {
+  display: flex;
+  justify-content: space-around;
+  margin: 6rem 0 4rem 0;
+}
+footer .footerInfo .infoMainFooter img {
+  margin-bottom: 2rem;
+}
+footer .footerInfo .infoMainFooter div i {
+  color: white;
+  margin-right: 2rem;
+  font-size: 32px;
+}
+footer .footerInfo .listMarket {
+  font-family: "Poppins", sans-serif;
+}
+footer .footerInfo .listMarket .titleMarket {
+  font-size: 32px;
+  font-weight: 600;
+}
+footer .footerInfo .listMarket ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer .footerInfo .listMarket ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footerInfo .listLinks .titleLinks {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+footer .footerInfo .listLinks ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer .footerInfo .listLinks ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .marca {
+  text-align: center;
+  padding: 1rem;
+  color: grey;
 }

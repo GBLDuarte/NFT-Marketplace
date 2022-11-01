@@ -1,5 +1,5 @@
 body {
-    background-color: #27185B;
+    background: linear-gradient(180deg, rgba(39,24,91,1) 5%, rgba(38,35,125,1) 48%, rgba(0,1,66,1) 95%);
     color: white;
 }
 
@@ -14,6 +14,8 @@ body {
 }
 
 // Imports
+@import "./componentes/extends";
+
 @import "./componentes/header";
 @import "./componentes/mainContent";
 @import "./componentes/partners";
@@ -22,3 +24,4 @@ body {
 @import "./componentes/categories";
 @import "./componentes/instructions";
 @import "./componentes/articles";
+@import "./componentes/footer";
