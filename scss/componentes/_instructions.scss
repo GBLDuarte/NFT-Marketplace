@@ -19,11 +19,11 @@
         -webkit-text-fill-color: transparent;
     }
 
-    .boxIns {
+    .flexIns {
         display: flex;
         gap: 1rem;
 
-        .boxInnerIns {
+        .boxIns {
             display: flex;
             flex-direction: column;
             align-items: center;
