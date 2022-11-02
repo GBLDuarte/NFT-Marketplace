@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("http://fonts.cdnfonts.com/css/clash-display");
+@import url("https://fonts.cdnfonts.com/css/clash-display");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
   background: linear-gradient(180deg, rgb(39, 24, 91) 5%, rgb(38, 35, 125) 48%, rgb(0, 1, 66) 95%);
@@ -15,7 +15,7 @@ body {
   border-radius: 60px;
 }
 
-.mainContent .mainNft .effect5, .mainContent .mainNft .effect4, .mainContent .mainNft .effect3, .mainContent .mainNft .effect2, .mainContent .mainNft .effect {
+.mainContent .mainNft .floating {
   position: absolute;
   transform: matrix(0.98, 0, -0.19, 1, 0, 0);
   background: linear-gradient(155.14deg, rgba(255, 255, 255, 0.103) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
@@ -129,40 +129,74 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
   font-family: "Inter", sans-serif;
   font-weight: 500;
 }
-.mainContent .mainNft .effect {
-  margin-left: 9rem;
-  top: 280px;
+.mainContent .mainNft {
+  font-family: "Clash Display", sans-serif;
+  position: relative;
+}
+.mainContent .mainNft .pStrong {
+  font-weight: 600;
+  font-size: 26px;
+}
+.mainContent .mainNft .imgBack {
+  top: 12%;
+  left: 22%;
   width: 474px;
   height: 600px;
   z-index: -1;
 }
-.mainContent .mainNft .effect2 {
-  margin-left: 3rem;
-  top: 180px;
+.mainContent .mainNft .imgBack2 {
+  top: -3.5%;
+  left: 6%;
   width: 474px;
   height: 336px;
   z-index: -1;
 }
-.mainContent .mainNft .effect3 {
-  top: 700px;
-  left: 1000px;
+.mainContent .mainNft .infoFrontBL {
+  top: 72%;
+  left: -5%;
   width: 344px;
   height: 106px;
   backdrop-filter: blur(5px);
 }
-.mainContent .mainNft .effect4 {
-  top: 190px;
-  left: 1520px;
+.mainContent .mainNft .infoFrontBL .divStrong {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0 1rem;
+}
+.mainContent .mainNft .infoFrontBL .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+.mainContent .mainNft .infoFrontTR {
+  top: 0%;
+  left: 72%;
   width: 200px;
   height: 74px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  text-align: center;
 }
-.mainContent .mainNft .effect5 {
-  top: 825px;
-  left: 1290px;
+.mainContent .mainNft .infoFrontBR {
+  top: 92%;
+  left: 40%;
   width: 347px;
   height: 100px;
   backdrop-filter: blur(5px);
+  text-align: center;
+  word-spacing: 1.6rem;
+}
+.mainContent .mainNft .infoFrontMR {
+  display: flex;
+  align-items: center;
+  top: 55%;
+  left: 48%;
+  width: 347px;
+  height: 100px;
+  backdrop-filter: blur(8px);
+}
+.mainContent .mainNft .infoFrontMR .pInfo {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .partners {
@@ -197,9 +231,38 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
   width: 440px;
   height: 600px;
   border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 .trendings .cardsList .card .card-img-top {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.trendings .cardsList .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.trendings .cardsList .card .card-body .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trendings .cardsList .card .card-body .card-head .name {
+  font-size: 22px;
+  font-weight: 600;
+}
+.trendings .cardsList .card .card-body .card-head .user {
+  font-weight: 500;
+  color: grey;
+}
+.trendings .cardsList .card .card-body .card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.trendings .cardsList .card .card-body .card-info .infoStrong {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .collections {

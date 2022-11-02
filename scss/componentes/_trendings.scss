@@ -19,9 +19,44 @@
             width: 440px;
             height: 600px;
             border-radius: 1rem;
+            font-family: 'Poppins', sans-serif;
 
             .card-img-top {
-                padding: 1rem;
+                padding: 1rem 1rem 0 1rem;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+
+                .card-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .name {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+
+                    .user {
+                        font-weight: 500;
+                        color: grey;
+                    }
+                }
+
+                .card-info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1rem;
+
+                    .infoStrong {
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }

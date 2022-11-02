@@ -1,7 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/clash-display');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
 .mainContent {
     margin: 3rem 0 10rem 0;
     display: flex;
@@ -70,50 +66,87 @@
     }
 
     .mainNft {
-        .effect {
-            @extend %divTransparent;
-            margin-left: 9rem;
-            top: 280px;
+        font-family: 'Clash Display', sans-serif;
+        position: relative;
+
+        .floating {
+            @extend %floatingDiv;
+        }
+
+        .pStrong {
+            font-weight: 600;
+            font-size: 26px;
+        }
+
+        .imgBack {
+            top: 12%;
+            left: 22%;
             width: 474px;
             height: 600px;
             z-index: -1;
 
         }
 
-        .effect2 {
-            @extend %divTransparent;
-            margin-left: 3rem;
-            top: 180px;
+        .imgBack2 {
+            top: -3.5%;
+            left: 6%;
             width: 474px;
-            height: 336px;                           
+            height: 336px;
             z-index: -1;
         }
 
-        .effect3 {
-            @extend %divTransparent;
-            top: 700px;
-            left: 1000px;
+        .infoFrontBL {
+            top: 72%;
+            left: -5%;
             width: 344px;
             height: 106px;
             backdrop-filter: blur(5px);
+
+            .divStrong {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem 1rem 0 1rem;
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 1rem;
+            }
         }
 
-        .effect4 {
-            @extend %divTransparent;
-            top: 190px;
-            left: 1520px;
+        .infoFrontTR {
+            top: 0%;
+            left: 72%;
             width: 200px;
             height: 74px;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(8px);
+            text-align: center;
         }
 
-        .effect5 {
-            @extend %divTransparent;
-            top: 825px;
-            left: 1290px;
+        .infoFrontBR {
+            top: 92%;
+            left: 40%;
             width: 347px;
             height: 100px;
             backdrop-filter: blur(5px);
+            text-align: center;
+            word-spacing: 1.6rem;
+        }
+
+        .infoFrontMR {
+            display: flex;
+            align-items: center;
+            top: 55%;
+            left: 48%;
+            width: 347px;
+            height: 100px;
+            backdrop-filter: blur(8px);
+
+            .pInfo {
+                font-size: 14px;
+                font-weight: 500;
+            }
         }
     }
 }
