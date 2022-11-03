@@ -1,3 +1,10 @@
+// VARIABLES
+
+$margenDiseño: 5rem 10rem 10rem 10rem;
+
+
+// EXTENDS
+
 %floatingDiv {
     position: absolute;
     transform: matrix(0.98, 0, -0.19, 1, 0, 0);

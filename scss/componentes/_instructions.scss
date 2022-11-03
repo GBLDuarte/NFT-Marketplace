@@ -1,6 +1,6 @@
 .instructions {
     @extend %columnBox;
-    margin: 12rem;
+    margin: $margenDiseño;
     padding: 1.5rem;
     border-radius: 40px;
     @extend %effectTransparent;
@@ -12,7 +12,6 @@
 
     .flexIns {
         display: flex;
-        gap: 1rem;
 
         .boxIns {
             @extend %columnBox;

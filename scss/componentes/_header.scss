@@ -1,9 +1,14 @@
 .navbar {
     .container-fluid {
-        padding: 2rem 8rem;
+        padding: 2rem 10rem;
 
         .navbar-brand {
             width: 190px;
+
+            &:hover {
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 3px 6px 8px;
+            }
         }
 
         .navbar-collapse {
@@ -19,6 +24,10 @@
                     font-family: 'Poppins', sans-serif;
                     font-size: 20px;
                     font-weight: 600;
+
+                    &:hover {
+                        text-shadow: 4px 8px 5px black;
+                    }
 
                     .btn-primary {
                         padding: 15px 25px;

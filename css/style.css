@@ -44,17 +44,21 @@ footer .subscribe, .articles, .instructions .flexIns .boxIns, .instructions, .ca
   align-items: center;
 }
 
-footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instructions .flexIns .boxIns p, .categories .flexCat p {
+footer .copyright, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instructions .flexIns .boxIns p, .categories .flexCat p {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .navbar .container-fluid {
-  padding: 2rem 8rem;
+  padding: 2rem 10rem;
 }
 .navbar .container-fluid .navbar-brand {
   width: 190px;
+}
+.navbar .container-fluid .navbar-brand:hover {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 3px 6px 8px;
 }
 .navbar .container-fluid .navbar-collapse {
   justify-content: flex-end;
@@ -70,6 +74,9 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
   font-size: 20px;
   font-weight: 600;
 }
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
+  text-shadow: 4px 8px 5px black;
+}
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link .btn-primary {
   padding: 15px 25px;
   border-radius: 60px;
@@ -77,16 +84,18 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 }
 
 .mainContent {
-  margin: 3rem 0 10rem 0;
+  margin: 5rem 10rem 10rem 10rem;
   display: flex;
-  justify-content: center;
-  column-gap: 10rem;
+  justify-content: space-between;
+}
+.mainContent .infoMain {
+  max-width: 600px;
 }
 .mainContent .infoMain .titleInfo {
-  margin: 0 4rem 2rem 0;
   font-family: "Clash Display", sans-serif;
+  margin-bottom: 3rem;
 }
-.mainContent .infoMain .titleInfo p {
+.mainContent .infoMain .titleInfo h1 {
   font-size: 87px;
   font-weight: 500;
   line-height: 78.5px;
@@ -200,9 +209,10 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 }
 
 .partners {
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  margin-bottom: 15rem;
+  padding-bottom: 25rem;
 }
 .partners .logos {
   width: 70%;
@@ -215,6 +225,7 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 }
 
 .trendings {
+  margin: 5rem 10rem 10rem 10rem;
   margin-bottom: 12rem;
 }
 .trendings .titleCards {
@@ -223,8 +234,9 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 .trendings .cardsList {
   display: flex;
   column-gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 5rem;
+  width: 100%;
 }
 .trendings .cardsList .card {
   align-items: center;
@@ -266,13 +278,17 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 }
 
 .collections {
-  margin-bottom: 12rem;
+  margin: 5rem 10rem 10rem 10rem;
 }
 .collections .titleCol {
   margin-bottom: 2.5rem;
 }
 .collections .btnsCol {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 .collections .btnsCol button {
   font-family: "Poppins", sans-serif;
@@ -284,9 +300,9 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 .collections .cardsCol {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
-  margin: 0 5rem 5rem 5rem;
+  margin-bottom: 5rem;
 }
 .collections .cardsCol .card {
   align-items: center;
@@ -295,19 +311,36 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
   border-radius: 1rem;
 }
 .collections .cardsCol .card .card-img-top {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.collections .cardsCol .card .card-body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.collections .cardsCol .card .card-body .pStrongCard {
+  font-size: 22px;
+  font-weight: 600;
+}
+.collections .cardsCol .card .card-body .priceNft {
+  display: flex;
+  flex-direction: column;
+}
+.collections .cardsCol .card .card-body .priceNft div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .categories {
-  margin-bottom: 15rem;
+  margin: 5rem 10rem 10rem 10rem;
 }
 .categories .titleCat {
   margin-bottom: 2.5rem;
 }
 .categories .flexCat {
   display: flex;
-  column-gap: 1rem;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5rem;
 }
 .categories .flexCat .boxCat {
   padding: 1rem 1rem 0 1rem;
@@ -324,7 +357,7 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
   row-gap: 0.5rem;
 }
 .instructions {
-  margin: 12rem;
+  margin: 5rem 10rem 10rem 10rem;
   padding: 1.5rem;
   border-radius: 40px;
 }
@@ -333,7 +366,6 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 }
 .instructions .flexIns {
   display: flex;
-  gap: 1rem;
 }
 .instructions .flexIns .boxIns {
   text-align: center;
@@ -348,16 +380,17 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
 }
 
 .articles {
-  margin-bottom: 15rem;
+  margin: 5rem 10rem 10rem 10rem;
 }
 .articles .titleArt {
   margin-bottom: 2.5rem;
 }
 .articles .flexArt {
   display: flex;
-  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .articles .flexArt .boxArt {
   border-radius: 20px;
@@ -367,6 +400,7 @@ footer .marca, footer .footerInfo .infoMainFooter p, footer .subscribe p, .instr
   font-weight: 600;
   max-width: fit-content;
   margin: 1rem;
+  line-height: 1.5;
   opacity: 1;
 }
 .articles .flexArt .boxArt p {
@@ -396,8 +430,8 @@ footer .subscribe .input-group {
 }
 footer .footerInfo {
   display: flex;
-  justify-content: space-around;
-  margin: 6rem 0 4rem 0;
+  justify-content: space-between;
+  margin: 5rem 10rem 10rem 10rem;
 }
 footer .footerInfo .infoMainFooter img {
   margin-bottom: 2rem;
@@ -444,7 +478,7 @@ footer .footerInfo .listLinks ul li a {
   color: white;
   text-decoration: none;
 }
-footer .marca {
+footer .copyright {
   text-align: center;
   padding: 1rem;
   color: grey;
